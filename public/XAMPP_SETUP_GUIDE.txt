@@ -1,0 +1,42 @@
+========================================================================
+       MHT-CET ENGINEERING COLLEGE PORTAL - XAMPP SETUP GUIDE
+                      Created By Vaibhav Dangle
+========================================================================
+
+Follow these quick 4 steps to run this project smoothly in XAMPP:
+
+------------------------------------------------------------------------
+STEP 1: BUILD THE PROJECT
+------------------------------------------------------------------------
+In your project terminal, run the build command:
+  npm run build
+
+This creates a production-ready `dist` folder. All assets are configured
+with relative paths (`base: './'`) and `.htaccess` for Apache URL rewriting.
+
+------------------------------------------------------------------------
+STEP 2: COPY BUILD FILES TO XAMPP HTDOCS
+------------------------------------------------------------------------
+1. Go to your XAMPP installation directory (usually `C:\xampp\htdocs\`).
+2. Create a new folder named `college-app` inside `htdocs`:
+   Path: `C:\xampp\htdocs\college-app\`
+3. Copy all files and folders inside the `dist` directory into `C:\xampp\htdocs\college-app\`.
+
+------------------------------------------------------------------------
+STEP 3: IMPORT MYSQL DATABASE IN PHPMYADMIN
+------------------------------------------------------------------------
+1. Open XAMPP Control Panel and click "Start" for **Apache** and **MySQL**.
+2. Open your web browser and navigate to:
+   http://localhost/phpmyadmin
+3. Click "Databases" tab, type database name `college_portal_db` and click "Create".
+4. Select `college_portal_db` from the left menu, click the "Import" tab at the top.
+5. Choose the file `database.sql` (found in this folder or inside dist/) and click "Go".
+
+------------------------------------------------------------------------
+STEP 4: LAUNCH THE APPLICATION
+------------------------------------------------------------------------
+Open your web browser and visit:
+  http://localhost/college-app/
+
+That's it! Your MHT-CET College Portal is now fully running on XAMPP!
+========================================================================

@@ -1,0 +1,6 @@
+{
+  "name": "Dynamic 3D College Portal",
+  "description": "Interactive college directory with 3D depth effects, dynamic search, filters, PHP module preview, and detail views.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
